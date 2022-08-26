@@ -1,0 +1,29 @@
+@import url('https://fonts.google.com/specimen/Manrope');
+
+
+@mixin fontAll(){
+  font-size: 11px;
+  text-align: center;
+  font-weight: 600;
+  font-family: [Manrope];
+}
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope'), url(./font/Manrope-VariableFont_wght.ttf) format('truetype');}
+
+@mixin fontParag(){
+  font-size: 15px;
+  text-align: center;
+  font-weight: 800;
+  font-family: [Manrope];
+}
+
+@mixin mobileSize(){
+width: 375px;
+}
+@mixin destopSize(){
+width: 1440px;
+}
+@mixin colourChart(){
+
+}
