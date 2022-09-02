@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import StyledCustomization from "./inBar.js";
 
 class MainPage extends Component {
   render() {
@@ -11,7 +12,10 @@ class MainPage extends Component {
           <div>
             <span></span>
             <h2>Pageviews</h2>
-            <div> interactive bar </div>
+            <div>
+              {" "}
+              <StyledCustomization />{" "}
+            </div>
             <span>$</span> <span>interactive number</span> <span>/month</span>
             <span>Monthly Billing</span>
             <button></button>
