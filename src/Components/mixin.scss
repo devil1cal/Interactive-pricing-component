@@ -1,5 +1,8 @@
 @import url('https://fonts.google.com/specimen/Manrope');
 
+@mixin controlBox{
+  border:1px solid red;
+}
 
 @mixin fontAll(){
   font-size: 11px;
@@ -7,9 +10,11 @@
   font-weight: 600;
   font-family: [Manrope];
 }
-@font-face {
+
+@font-face manrope() {
   font-family: 'Manrope';
-  src: local('Manrope'), url(./font/Manrope-VariableFont_wght.ttf) format('truetype');}
+  src: local('Manrope'), url(./font/Manrope-VariableFont_wght.ttf) format('truetype');
+}
 
 @mixin fontParag(){
   font-size: 15px;

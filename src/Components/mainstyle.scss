@@ -1,0 +1,87 @@
+@import 'mixin';
+
+
+.mainbox{
+@include controlBox;
+@include mobileSize();
+@include fontParag();
+  .bg-styling{
+   
+    .bg-img{
+      @include controlBox;
+    }
+    .firstheader{
+      @include controlBox;
+
+    }
+    .maincallin{
+      @include controlBox;
+
+    }
+    .pricebarfullbox{
+      @include controlBox;
+
+      .changingnum{
+        @include controlBox;
+
+      }
+      .boxhead{
+        @include controlBox;
+
+      }
+      .pricebar{
+        @include controlBox;
+        
+      }
+      .bigpag{
+        @include controlBox;
+
+      }
+      .changingnumwp{
+        @include controlBox;
+
+      }
+      .littlepag{
+        @include controlBox;
+
+      }
+      .simplepag{
+        @include controlBox;
+
+      }
+      .chaningcomp{
+        @include controlBox;
+
+      }
+    }
+    .emptydiv{
+      @include controlBox;
+
+    }
+  }
+  .lastbox{
+    @include controlBox;
+    .lastboxlist{    
+      @include controlBox;
+      .listitems1{
+        @include controlBox;
+        .boximg{
+        }
+      }
+      .listitems2{
+        @include controlBox;
+        .boximg{
+        }
+      }
+      .listitems3{
+        @include controlBox;
+        .boximg{
+        }
+      }
+    }
+    .calltoactionbutton{
+      @include controlBox;
+
+    }
+  }
+}
