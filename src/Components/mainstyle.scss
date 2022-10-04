@@ -6,12 +6,15 @@
    @include fontParag();
    background-color:hsl(230,100%,99%);//Very Pale Blue (Main Background)
    max-width: 375px;
+
+   //circle image
    .bg-img{
     @include controlBox;
     background-image: url("https://codesandbox.io/s/f7dctt?file=/src/Components/images/pattern-circles.svg");
 
  z-index: 0;
   }
+  //circle image
 
      //call to action box
   .bg-styling{
@@ -27,6 +30,21 @@
     
     }
     //call to action box end
+
+    .pageviewbox{
+      // @include controlBox;
+       @include fontAll;
+       display: flex;
+
+       .changingnum{
+        // @include controlBox;
+       }
+       .boxhead{
+      //  @include controlBox;
+         }
+       }
+
+
 //-----------------------------------------------//
     // slider box starts
 
@@ -35,53 +53,53 @@
        background-color: hsl(0, 0%,100%); //White (Pricing Component Background)
 
        //slider style starts
+
+       .pricebar{
+        // @include controlBox;
+      }
        .MuiSlider-colorPrimary {
         color:hsl(174,77%,80%)!important; //Strong Cyan (Slider Backround)
       }
        .MuiSlider-thumb{
         color:hsl(174, 86%, 45%)!important; //Soft Cyan (Full Slider Bar)
       }
+    
       
       //slider style ends
+
+      //toggle button and discount box starts
+      .billingbox{
+        @include controlBox;
+        .bigpag{
+      //  @include controlBox;
+        .changingnumwp{
+        // @include controlBox;
+         }
+        }
      
-      .changingnum{
-        //@include controlBox;
-
-      }
-      .boxhead{
-        
-
-      }
-      .pricebar{
-        //@include controlBox;
-        
-      }
-      .bigpag{
-       // @include controlBox;
-
-      }
-      .changingnumwp{
-       // @include controlBox;
-
-      }
       .littlepag{
-         //@include controlBox;
+        // @include controlBox;
 
       }
       .simplepag{
          //@include controlBox;
 
       }
-      .chaningcomp{
-         //@include controlBox;
+      //toggle button
+      .chaningcomp{ 
+         @include controlBox;
 
       }
+      //toggle button end
+    }
+     //toggle button and discount box starts
     
     .emptydiv{
-       //@include controlBox;
-
+       //@include controlBox
     }
   }
+
+  //last box starts
   .lastbox{
     //@include controlBox;
     .lastboxlist{    
@@ -91,17 +109,20 @@
         .boximg{
         }
       }
+
       .listitems2{
         //@include controlBox;
         .boximg{
         }
       }
+
       .listitems3{
         //@include controlBox;
         .boximg{
         }
       }
     }
+
     .calltoactionbutton{
       //@include controlBox;
 

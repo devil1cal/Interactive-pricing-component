@@ -19,21 +19,25 @@ class MainPage extends Component {
           </span>
         </div>
         <div className="pricebarfullbox">
-          <span className="changingnum"></span>
-          <h2 className="boxhead">Pageviews</h2>
+          <div className="pageviewbox">
+            <span className="changingnum"></span>
+            <h2 className="boxhead">Pageviews</h2>
+          </div>
           <div className="pricebar">
             {" "}
             <StyledCustomization />{" "}
           </div>
-          <span className="bigpag">$</span>{" "}
-          <span className="changingnumwp">interactive number</span>{" "}
-          <span className="littlepag">/month</span>
-          <br />
-          <span className="simplepag">Monthly Billing</span>
-          <button className="chaningcomp"></button>
-          <span className="simplepag">Yearly Billing</span>
-          <span className="simplepag">25%</span>
-          <span className="simplepag">discount</span>
+          <div className="billingbox">
+            <span className="bigpag">$</span>{" "}
+            <span className="changingnumwp">interactive number</span>{" "}
+            <span className="littlepag">/month</span>
+            <br />
+            <span className="simplepag">Monthly Billing</span>
+            <button className="chaningcomp"></button>
+            <span className="simplepag">Yearly Billing</span>
+            <span className="simplepag">25%</span>
+            <span className="simplepag">discount</span>
+          </div>
         </div>
         <div className="emptydiv"></div>
 
