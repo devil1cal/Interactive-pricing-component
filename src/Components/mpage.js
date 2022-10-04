@@ -7,31 +7,35 @@ class MainPage extends Component {
     return (
       <div className="mainbox">
         <div className="bg-styling">
-          <img className="bg-img" href="#" alt="none" />
+          <img
+            className="bg-img"
+            href="Components/images/pattern-circles.svg"
+            alt="none"
+          />
           <h1 className="firstheader">Simple, traffic-based pricing</h1>
           <span className="maincallin">
             {" "}
             Sign-up for our 30-day trial. No credit card required.{" "}
           </span>
-          <div className="pricebarfullbox">
-            <span className="changingnum"></span>
-            <h2 className="boxhead">Pageviews</h2>
-            <div className="pricebar">
-              {" "}
-              <StyledCustomization />{" "}
-            </div>
-            <span className="bigpag">$</span>{" "}
-            <span className="changingnumwp">interactive number</span>{" "}
-            <span className="littlepag">/month</span>
-            <br />
-            <span className="simplepag">Monthly Billing</span>
-            <button className="chaningcomp"></button>
-            <span className="simplepag">Yearly Billing</span>
-            <span className="simplepag">25%</span>
-            <span className="simplepag">discount</span>
-          </div>
-          <div className="emptydiv"></div>
         </div>
+        <div className="pricebarfullbox">
+          <span className="changingnum"></span>
+          <h2 className="boxhead">Pageviews</h2>
+          <div className="pricebar">
+            {" "}
+            <StyledCustomization />{" "}
+          </div>
+          <span className="bigpag">$</span>{" "}
+          <span className="changingnumwp">interactive number</span>{" "}
+          <span className="littlepag">/month</span>
+          <br />
+          <span className="simplepag">Monthly Billing</span>
+          <button className="chaningcomp"></button>
+          <span className="simplepag">Yearly Billing</span>
+          <span className="simplepag">25%</span>
+          <span className="simplepag">discount</span>
+        </div>
+        <div className="emptydiv"></div>
 
         <div className="lastbox">
           <ul className="lastboxlist">
