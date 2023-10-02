@@ -8,4 +8,9 @@
 # So, the following three lines are all functionally equivalent:
 *.es linguist-language=js
 *.es linguist-language=js
-*.es linguist-language=React
+*.es linguist-language=JAVASCRIPT
+
+
+*.kicad_pcb linguist-detectable
+*.sch linguist-detectable
+tools/export_bom.py -linguist-detectable
