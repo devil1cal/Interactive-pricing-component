@@ -13,3 +13,5 @@
 *.kicad_pcb linguist-detectable
 *.sch linguist-detectable
 tools/export_bom.py -linguist-detectable
+
+.css linguist-language=React
