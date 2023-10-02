@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import StyledCustomization from "./inBar.js";
+import StyledCustomization from "./inBar.jsx";
 import "./mainstyle.scss";
 
 class MainPage extends Component {
