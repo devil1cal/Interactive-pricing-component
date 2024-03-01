@@ -16,7 +16,8 @@ class MainPage extends Component {
 
             <div className="first-call-to-action">
               <h1 className="firstheader">Simple, traffic-based pricing</h1>
-              <span className="maincallin">Sign-up for our 30-day trial. No credit card required.</span>
+              <span className="maincallin">Sign-up for our 30-day trial. 
+              <br/>No credit card required.</span>
             </div>
 
             <div className="circle-pattern" >
