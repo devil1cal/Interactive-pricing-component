@@ -1,63 +1,89 @@
 import React, { Component } from "react";
-import StyledCustomization from "./inBar.jsx";
-import "./mainstyle.scss";
+import StyledCustomization from "./inBar.js";
+import "./images/pattern-circles.svg";
+import Switch from '@mui/material/Switch';
+import Button from '@mui/material/Button';
+//import "./mainstyle.scss";
+import "./mix.scss";
 
 class MainPage extends Component {
   render() {
     return (
       <div className="mainbox">
-        <div className="bg-styling">
-          <img
-            className="bg-img"
-            href="Components/images/pattern-circles.svg"
-            alt="none"
-          />
-          <h1 className="firstheader">Simple, traffic-based pricing</h1>
-          <span className="maincallin">
-            {" "}
-            Sign-up for our 30-day trial. No credit card required.{" "}
-          </span>
-        </div>
-        <div className="pricebarfullbox">
-          <div className="pageviewbox">
-            <span className="changingnum"></span>
-            <h2 className="boxhead">Pageviews</h2>
-          </div>
-          <div className="pricebar">
-            {" "}
-            <StyledCustomization />{" "}
-          </div>
-          <div className="billingbox">
-            <span className="bigpag">$</span>{" "}
-            <span className="changingnumwp">interactive number</span>{" "}
-            <span className="littlepag">/month</span>
-            <br />
-            <span className="simplepag">Monthly Billing</span>
-            <button className="chaningcomp"></button>
-            <span className="simplepag">Yearly Billing</span>
-            <span className="simplepag">25%</span>
-            <span className="simplepag">discount</span>
-          </div>
-        </div>
-        <div className="emptydiv"></div>
+        <div className="bg-box1" >
 
-        <div className="lastbox">
-          <ul className="lastboxlist">
-            <li className="listitems1">
-              <img className="boximg" href="#" alt="none" />
-              Unlimited websites
-            </li>
-            <li className="listitems2">
-              <img className="boximg" href="#" alt="none" />
-              100% data ownership
-            </li>
-            <li className="listitems3">
-              <img className="boximg" href="#" alt="none" />
-              Email reports
-            </li>
-          </ul>
-          <button className="calltoactionbutton">Start my trial</button>
+          <div className="total-first-box">
+
+            <div className="first-call-to-action">
+              <h1 className="firstheader">Simple, traffic-based pricing</h1>
+              <span className="maincallin">Sign-up for our 30-day trial. No credit card required.</span>
+            </div>
+
+            <div className="circle-pattern" >
+              <svg alt="circle image"xmlns="http://www.w3.org/2000/svg" width="146" height="145">
+              <g fill="none" fill-rule="evenodd" stroke="#CFD8EF">
+              <circle cx="63" cy="82" r="62.5"/><circle cx="105" cy="41" r="40.5"/></g></svg>
+            </div>
+          </div>
         </div>
+
+        <div className="card-box">          
+          <div className="pricebarfullbox">
+            <div className="pageviewbox">
+              <span className="changingnum"></span>
+              <h2 className="boxhead">Pageviews</h2>
+            </div>
+
+            <div className="pricebar">
+              {" "}<StyledCustomization />{" "}
+            </div>
+
+            <div className="billingbox">
+              <div>
+                <span className="bigpag">$</span>{" "}
+                <span className="changingnumwp">interactive number</span>{" "}
+                <span className="littlepag">/month</span>
+              </div>
+              <div className="toggle-f-b">
+                <span className="simplepag">Monthly Billing</span>
+                <Switch />
+                <span className="simplepag">Yearly Billing</span>
+                <span className="red-r-b simplepag">25%</span>
+                <span className="simplepag">discount</span>
+              </div>
+            </div>
+          </div>
+
+            <div className="emptydiv"></div>
+
+            <div className="lastbox">
+              <div>
+                <ul className="lastboxlist">
+                  <li className="listitems1">
+                    <svg  className="boximg" xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+                    <path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
+                    Unlimited websites
+                  </li>
+
+                  <li className="listitems2">
+                    <svg  className="boximg" xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+                    <path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
+                    100% data ownership
+                  </li>
+
+                  <li className="listitems3">
+                    <svg  className="boximg" xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+                    <path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
+                    Email reports
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <Button className=".Button">Start my trial</Button>
+              </div>
+            </div>
+        </div> 
+        <div className="bg-box2"></div>
       </div>
     );
   }

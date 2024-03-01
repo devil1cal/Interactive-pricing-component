@@ -4,33 +4,40 @@
   border:1px solid red;
 }
 
+/* font url */
+@font-face {
+  font-family: "Manrope";
+  src: url('https://fonts.google.com/specimen/Manrope');
+  src: local('Manrope');
+  src: url('https://fonts.google.com/specimen/Manrope') format('ttf');
+}
+
 @mixin fontAll(){
-  font-size: 11px;
+  font-size: 1rem;
   text-align: center;
   font-weight: 600;
   font-family: [Manrope];
- 
+  font-style: normal;
 }
 
-@font-face manrope() {
-  font-family: 'Manrope';
-  src: local('Manrope'), url(./font/Manrope-VariableFont_wght.ttf) format('truetype');
-}
-
+/*front page style*/
 @mixin fontParag(){
-  font-size: 15px;
+  font-size: 	1.5rem;
   text-align: center;
   font-weight: 800;
   font-family: [Manrope];
-
+  font-style: normal;
 }
 
+/* other sizes */
 @mixin mobileSize(){
 width: 375px;
 }
+
 @mixin destopSize(){
 width: 1440px;
 }
+
 @mixin colourChart(){
 
 }
