@@ -39,21 +39,26 @@ body{
   height: 100%;
   color:hsl(225, 20%, 60%);
   border:1px solid purple;
-  border-radius:0px 0px 0px 50px;
+  border-radius:0px 0px 0px 150px;
   
 
 }
 
 .total-first-box{
+  width: 100%;
+  height: 450px;
   max-width: 375px;
-  max-height: 250px;
+ 
 }
 
 
 .first-call-to-action{
  // @include controlBox;
-  position: relative;
-  top:50%;
+  position: absolute;
+  align-items: center;
+  padding-top: 25%;
+
+  
 }
 
 .firstheader{
@@ -79,6 +84,7 @@ body{
   @include controlBox;
   display: flex;
   justify-content: center;
+  padding-top: 25%;
   
   }
 
