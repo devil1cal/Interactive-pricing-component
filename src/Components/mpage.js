@@ -31,8 +31,8 @@ class MainPage extends Component {
         <div className="card-box">          
           <div className="pricebarfullbox">
             <div className="pageviewbox">
-              <span className="changingnum"></span>
-              <h2 className="boxhead">Pageviews</h2>
+              <span className="changingnum">100K</span>
+              <span className="boxhead">Pageviews</span>
             </div>
 
             <div className="pricebar">

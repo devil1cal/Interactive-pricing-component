@@ -1,9 +1,11 @@
 @import 'mixin.scss';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 *{
   margin: 0;
   padding: 0;
 }
+
 
 body{
   background-color: #f9fafe;
@@ -29,119 +31,128 @@ body{
 //-----------------------------------------------//
 //call to action box
 
-.bg-box1{
+.bg-box1{ // call to action & circle img
   @include controlBox;
   display: flex;
-  border-radius:0px 0px 0px 30px;
   justify-content: center;
   max-width: 375px;
   width: 100%;
   height: 100%;
-  color:hsl(225, 20%, 60%);
-  border:1px solid purple;
-  border-radius:0px 0px 0px 150px;
-  
-
+  background-color:#f1f5fe;
+  border-radius:0px 0px 0px 125px;
 }
 
-.total-first-box{
-  width: 100%;
-  height: 450px;
-  max-width: 375px;
- 
-}
-
-
-.first-call-to-action{
- // @include controlBox;
-  position: absolute;
-  align-items: center;
-  padding-top: 25%;
-
-  
-}
-
-.firstheader{
- // @include fontParag;
-  color:hsl(227,35%,25%); //Dark Desaturated Blue (Text & CTA Background)
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 2;
-}
-
-.maincallin{
+.total-first-box{ //all the boxes
   //@include controlBox;
-  @include fontAll;
-  color:hsl(225, 20%, 60%);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  line-height: 1.5;
+  width: 100%;
+  height: 350px;
+  max-width: 375px;
+  
 }
 
-.circle-pattern{
-  //circle image
-  @include controlBox;
-  display: flex;
-  justify-content: center;
-  padding-top: 25%;
-  
+  .first-call-to-action{ // total call to actions
+  //@include controlBox;
+    position: absolute;
+    padding-top: 25%;
+    padding-left: 6.5%;
+    padding-right: 6.5%;
   }
 
+    .firstheader{ //big size call to action
+    //@include fontParag;
+    @include fontParag;
+    color:hsl(227,35%,25%); //Dark Desaturated Blue (Text & CTA Background)
+    font-size: 1.45rem;
+    line-height: 1.5;
+    }
 
+    .maincallin{ //small size call to action
+      //@include controlBox;
+      @include fontAll;
+      color:hsl(225, 20%, 60%);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.5;
+      font-size: 1.05rem;
+    }
 
-
+    .circle-pattern{ //circle svg
+      //circle image
+      //@include controlBox;
+      display: flex;
+      justify-content: center;
+      padding-top: 16%;
+      
+    }
 
 //call to action box end
 //-----------------------------------------------//
 
-.card-box{
+.card-box{ // main box of  funciton & list & button
   @include controlBox;
-  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin:4%;
+  top: 60%;
   width: 92%;
   height: 450px;
   box-shadow: 0px 10px 0 0 whitesmoke;
-  background-color: #ffffff;
-  margin:4%;
- border:2px solid blue;
+  background-color: hsl (0, 0%, 100%);
 }
 
-.pageviewbox{
-  @include controlBox;
-  @include fontAll;
-  display: flex;
+  .pageviewbox{ //total function num and h2
+    @include controlBox;
+    display: flex;
+    @include fontParag; 
+    flex-direction: row;
+    margin-top:5%;
+    margin-bottom:5%;
+    justify-content:center;
+  }
  
 
-  .changingnum{
-    @include controlBox;
-  }
+    .changingnum{ //function number style
+      @include controlBox; 
+      color:hsl(225, 20%, 60%);
+      line-height: 1.5;
+      margin-right:5%;
+    }
 
-  .boxhead{
-    @include controlBox;
-  }
-}
+    .boxhead{ // span2
+      @include controlBox;
+      color:hsl(225, 20%, 60%);
+      line-height: 1.5;
+      text-transform:uppercase;
+  
+    }
 
 //-----------------------------------------------//
 // slider box starts
 
-.pricebarfullbox{
+.pricebarfullbox{ // function slider & list 
   //@include controlBox;
+  @include fontAll;
   background-color: hsl(0, 0%,100%); //White (Pricing Component Background)
+}
 
-  .pricebar{
+//slider style starts
+  .pricebar{ //slider
     @include controlBox;
+    
   }
 
-  .MuiSlider-colorPrimary {
+  .MuiSlider-colorPrimary { //slider collour
     //@include controlBox;
     color:hsl(174,77%,80%)!important; //Strong Cyan (Slider Backround)
   }
 
-  .MuiSlider-thumb{
+  .MuiSlider-thumb{ //slider ball
     //@include controlBox;
     color:hsl(174, 86%, 45%)!important; //Soft Cyan (Full Slider Bar)
   }
-}
+
 //slider style ends
 
 //-----------------------------------------------//
