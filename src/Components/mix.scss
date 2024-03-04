@@ -143,14 +143,31 @@ body{
     
   }
 
-  .MuiSlider-colorPrimary { //slider collour
+  .MuiSlider-root.MuiSlider-colorPrimary.MuiSlider-sizeMedium.css-1sv6iah-MuiSlider-root{
+    border-radius: 10px !important;
+    height: 6px !important;
+    
+  }
+
+  .css-14pt78w-MuiSlider-rail {
+    background-color: hsl(224, 65%, 95%) !important;
+  }
+
+  .MuiSlider-colorPrimary { //slider colour
     //@include controlBox;
-    color:hsl(174,77%,80%)!important; //Strong Cyan (Slider Backround)
+    color:hsl(174, 86%, 45%)!important; //Strong Cyan (Slider Backround)
   }
 
   .MuiSlider-thumb{ //slider ball
     //@include controlBox;
     color:hsl(174, 86%, 45%)!important; //Soft Cyan (Full Slider Bar)
+  }
+
+  .MuiSlider-thumb.MuiSlider-thumbSizeMedium.MuiSlider-thumbColorPrimary.MuiSlider-thumb.MuiSlider-thumbSizeMedium.MuiSlider-thumbColorPrimary.css-jx1sa5-MuiSlider-thumb ::before{
+    box-shadow: 0px  !important;
+   }
+  .MuiSlider-thumb.MuiSlider-thumbSizeMedium.MuiSlider-thumbColorPrimary.MuiSlider-thumb.MuiSlider-thumbSizeMedium.MuiSlider-thumbColorPrimary.css-jx1sa5-MuiSlider-thumb ::after{
+   box-shadow: 0px 7px 0px 0px rgba(14,203,184,0.57) !important;
   }
 
 //slider style ends
