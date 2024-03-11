@@ -125,8 +125,9 @@ body{
       color:hsl(225, 20%, 60%);
       line-height: 1.5;
       text-transform:uppercase;
-  
     }
+
+
 
 //-----------------------------------------------//
 // slider box starts
@@ -169,6 +170,56 @@ body{
   .MuiSlider-thumb.MuiSlider-thumbSizeMedium.MuiSlider-thumbColorPrimary.MuiSlider-thumb.MuiSlider-thumbSizeMedium.MuiSlider-thumbColorPrimary.css-jx1sa5-MuiSlider-thumb ::after{
    box-shadow: 0px 7px 0px 0px rgba(14,203,184,0.57) !important;
   }
+
+  .billingbox{
+    display: flex;
+    //@include controlBox;
+    flex-direction: column;
+  }
+
+  .billbox{
+    @include controlBox;
+    @include fontParag;
+    margin:5%;
+    color:hsl(227, 35%, 25%);
+  }
+
+  .bigpag, .changingnumwp {
+    font-size: 20px;
+  }
+
+  .littlepag{ 
+    color:#868da2;
+  }
+
+  .toggle-f-b{
+    display: flex;
+    flex-direction: row;
+    align-items: center;;
+    justify-content: space-around;
+    @include controlBox;
+    @include fontAll;
+    font-size: 14px;
+    color:#868da2;
+    padding:5%;
+    
+  }
+
+  
+  
+  .red-r-b{
+    padding:2px 9px 2px 9px;
+    border-radius: 12px;
+    background-color: hsl(14, 92%, 95%);
+    color:hsl(15, 100%, 70%);
+
+  }
+
+  .showinbig{
+    display: none;
+  }
+
+
 
 //slider style ends
 

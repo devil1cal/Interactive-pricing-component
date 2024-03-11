@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import StyledCustomization from "./inBar.js";
 import "./images/pattern-circles.svg";
-import Switch from '@mui/material/Switch';
+import MySwitch from './switch.js';
 import Button from '@mui/material/Button';
 //import "./mainstyle.scss";
 import "./mix.scss";
@@ -40,17 +40,17 @@ class MainPage extends Component {
             </div>
 
             <div className="billingbox">
-              <div>
+              <div className="billbox">
                 <span className="bigpag">$</span>{" "}
-                <span className="changingnumwp">interactive number</span>{" "}
+                <span className="changingnumwp">16.00</span>{" "}
                 <span className="littlepag">/month</span>
               </div>
               <div className="toggle-f-b">
                 <span className="simplepag">Monthly Billing</span>
-                <Switch />
+                <MySwitch/>
                 <span className="simplepag">Yearly Billing</span>
                 <span className="red-r-b simplepag">25%</span>
-                <span className="simplepag">discount</span>
+                <span className="showinbig simplepag">discount</span>
               </div>
             </div>
           </div>
