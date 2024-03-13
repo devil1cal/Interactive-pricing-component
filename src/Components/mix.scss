@@ -265,16 +265,17 @@ body{
 .lastbox{
   //@include controlBox;
   @include fontAll;
- 
   text-transform:none;
   text-align: center;
   color:hsl(225, 20%, 60%);
+}
 
   .lastboxlist{    
     //@include controlBox;
     list-style: none;
     display: flex;
     flex-direction: column;
+    line-height: 35px;;
    
   }
 
@@ -299,10 +300,15 @@ body{
   }
 
   .boximg{
-    display: flex;
-    margin-right:1.5%;
+   display: flex;
+   margin: auto;
+   width: 20px;
+   height:20px;
+
+   
+    @include controlBox;
   }
-}
+
 
 .css-1w1rijm-MuiButtonBase-root-MuiButton-root{
   font-family: "Manrope";

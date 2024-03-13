@@ -3,6 +3,7 @@ import StyledCustomization from "./inBar.js";
 import "./images/pattern-circles.svg";
 import MySwitch from './switch.js';
 import Button from '@mui/material/Button';
+import TickIcon from "./images/icon-check.js";
 //import "./mainstyle.scss";
 import "./mix.scss";
 
@@ -61,20 +62,18 @@ class MainPage extends Component {
               <div>
                 <ul className="lastboxlist">
                   <li className="listitems1">
-                    <svg  className="boximg" xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+                    <svg  className="boximg" xmlns="http://www.w3.org/2000/svg" >
                     <path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
                     Unlimited websites
                   </li>
 
                   <li className="listitems2">
-                    <svg  className="boximg" xmlns="http://www.w3.org/2000/svg" width="9" height="8">
-                    <path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
+                  <TickIcon/>
                     100% data ownership
                   </li>
 
-                  <li className="listitems3">
-                    <svg  className="boximg" xmlns="http://www.w3.org/2000/svg" width="9" height="8">
-                    <path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
+                  <li className="listitems3"><div  className="boximg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg></div>
                     Email reports
                   </li>
                 </ul>
