@@ -80,7 +80,13 @@ class MainPage extends Component {
                 </ul>
               </div>
               <div>
-                <Button className=".Button">Start my trial</Button>
+              <Button
+  disabled={false}
+  loading={false}
+  onClick={function(){}}
+  size="lg"
+  variant="solid"
+>Start My Trail</Button>
               </div>
             </div>
         </div> 
