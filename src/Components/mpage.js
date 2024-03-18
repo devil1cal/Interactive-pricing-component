@@ -62,8 +62,8 @@ class MainPage extends Component {
               <div>
                 <ul className="lastboxlist">
                   <li className="listitems1">
-                    <svg  className="boximg" xmlns="http://www.w3.org/2000/svg" >
-                    <path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
+                    <svg className="boximg" xmlns="http://www.w3.org/2000/svg" >
+                    <path  fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
                     Unlimited websites
                   </li>
 
@@ -80,12 +80,13 @@ class MainPage extends Component {
               </div>
               <div>
               <Button
-  disabled={false}
-  loading={false}
-  onClick={function(){}}
-  size="lg"
-  variant="solid"
->Start My Trail</Button>
+                disabled={false}
+                loading={false}
+                onClick={function(){}}
+                size="lg"
+                variant="solid">
+                  Start My Trail
+              </Button>
               </div>
             </div>
         </div> 

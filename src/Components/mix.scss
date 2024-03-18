@@ -299,11 +299,12 @@ body{
    margin: auto;
   }
 
-  .boximg{
-   display: flex;
+  .boxing{
+   display: inline-flex;
    margin: auto;
-   width: 20px;
-   height:20px;
+   width: 40px !important;
+   height:40px !important;
+   transform: 2.5px;
 
    
     @include controlBox;
