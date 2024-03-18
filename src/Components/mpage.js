@@ -7,7 +7,18 @@ import TickIcon from "./images/icon-check.js";
 //import "./mainstyle.scss";
 import "./mix.scss";
 
+
+const svgdesign={
+  viewBox:"0 0 25 25",
+  width:"25",
+  height:"25",
+  border:"1px solid red"
+};
+
 class MainPage extends Component {
+
+
+
   render() {
     return (
       <div className="mainbox">
@@ -22,7 +33,7 @@ class MainPage extends Component {
             </div>
 
             <div className="circle-pattern" >
-              <svg alt="circle image"xmlns="http://www.w3.org/2000/svg" width="146" height="145">
+             <svg alt="circle image"xmlns="http://www.w3.org/2000/svg" width="146" height="145">
               <g fill="none" fill-rule="evenodd" stroke="#CFD8EF">
               <circle cx="63" cy="82" r="62.5"/><circle cx="105" cy="41" r="40.5"/></g></svg>
             </div>
@@ -62,7 +73,7 @@ class MainPage extends Component {
               <div>
                 <ul className="lastboxlist">
                   <li className="listitems1">
-                    <svg className="boximg" xmlns="http://www.w3.org/2000/svg" >
+                    <svg  width="25px" height="25px" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" >
                     <path  fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
                     Unlimited websites
                   </li>
@@ -72,9 +83,9 @@ class MainPage extends Component {
                     100% data ownership
                   </li>
 
-                  <li className="listitems3"><div  className="boximg">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg></div>
-                    Email reports
+                  <li className="listitems3">
+                    <img className="boxing" href=".\images\greentick.png" alt="tick"/>
+                 Email reports
                   </li>
                 </ul>
               </div>

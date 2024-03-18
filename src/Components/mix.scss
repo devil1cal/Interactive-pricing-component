@@ -275,7 +275,7 @@ body{
     list-style: none;
     display: flex;
     flex-direction: column;
-    line-height: 35px;;
+    line-height: 35px;
    
   }
 
@@ -294,19 +294,21 @@ body{
   }
 
   .listitems3{
-   // @include controlBox;
+   @include controlBox;
    display: flex;
-   margin: auto;
-  }
-
-  .boxing{
-   display: inline-flex;
    margin: auto;
    width: 40px !important;
    height:40px !important;
-   transform: 2.5px;
-
    
+  }
+
+
+
+  .boxing{
+   width: 25px;
+   height: 25px;
+   
+
     @include controlBox;
   }
 
