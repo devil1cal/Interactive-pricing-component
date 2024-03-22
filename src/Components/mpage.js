@@ -73,8 +73,10 @@ class MainPage extends Component {
               <div>
                 <ul className="lastboxlist">
                   <li className="listitems1">
+                    
                     <svg  width="25px" height="25px" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" >
                     <path  fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
+                    
                     Unlimited websites
                   </li>
 
@@ -84,7 +86,7 @@ class MainPage extends Component {
                   </li>
 
                   <li className="listitems3">
-                    <img className="boxing" href=".\images\greentick.png" alt="tick"/>
+                  <img className="boxing" src=".\images\greentick.svg" alt="tick"/>
                  Email reports
                   </li>
                 </ul>
